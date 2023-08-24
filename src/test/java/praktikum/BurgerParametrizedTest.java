@@ -70,7 +70,7 @@ public class BurgerParametrizedTest {
         Database database = new Database();
         Burger burger = new Burger();
         burger.setBuns(database.availableBuns().get(bun));
-        for (Integer ingredient : ingredients){
+        for (Integer ingredient : ingredients) {
             burger.addIngredient(database.availableIngredients().get(ingredient));
         }
         return burger;
